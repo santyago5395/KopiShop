@@ -1,0 +1,49 @@
+.grid-header {
+  background: blue;
+  grid-area: header;
+  display: flex;
+  width: 100%;
+  height: 538px; }
+
+.grid-header div {
+  background: no-repeat cover;
+  display: flex;
+  width: 100%; }
+
+.img-animation {
+  background: no-repeat;
+  background-size: 100%;
+  animation-name: animationXD;
+  animation-duration: 20s;
+  animation-iteration-count: infinite; }
+
+.img-logo {
+  position: absolute;
+  justify-content: center;
+  justify-items: center;
+  top: 80px;
+  width: 40% !important;
+  margin: 0 30%;
+  z-index: 10; }
+
+.img-logo img {
+  width: 100%;
+  justify-content: center;
+  justify-items: center;
+  align-items: center; }
+
+.wave {
+  background: no-repeat;
+  position: absolute;
+  bottom: 118.5px;
+  z-index: 5; }
+
+@keyframes animationXD {
+  0% {
+    background-image: url(../img/coffeeGrano.jpg); }
+  33% {
+    background-image: url(../img/coffee.jpg); }
+  66% {
+    background-image: url(../img/moka.jpg); }
+  100% {
+    background-image: url(../img/ropa.jpg); } }

@@ -1,0 +1,80 @@
+.grid-footer {
+  grid-area: footer;
+  width: 100%;
+  display: flex;
+  flex-grow: 1;
+  flex-direction: row;
+  background: #1b1c24; }
+
+.footer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.3fr 1.5fr 0.2fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas: "contacto contacto contacto contacto" "ubicacion navegacion nosotros noticias" "empresa empresa empresa empresa"; }
+  .footer div h1 {
+    color: white;
+    text-align: center; }
+
+.contacto {
+  grid-area: contacto; }
+  .contacto form {
+    width: 50%;
+    border-radius: 20px;
+    color: white;
+    padding: 20px;
+    margin: auto;
+    background-color: #1f2230;
+    animation: bounce 1.5s infinite; }
+  .contacto legend {
+    text-align: center;
+    font-size: 50px;
+    font-family: "Merriweather";
+    color: white; }
+
+@keyframes bounce {
+  0% {
+    tranform: translate(0, 4px); }
+  50% {
+    transform: translate(0, 8px); } }
+
+#name {
+  border: none;
+  border-radius: 10px;
+  background: #0f1016;
+  border-bottom: 22px white;
+  color: white; }
+
+#email {
+  background: #0f1016;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  color: white; }
+
+#areatext {
+  background: #0f1016;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  height: 10em;
+  width: 100%; }
+
+.ubicacion {
+  grid-area: ubicacion; }
+
+.navegacion {
+  grid-area: navegacion; }
+
+.nosotros {
+  grid-area: nosotros; }
+
+.noticias {
+  grid-area: noticias; }
+
+.empresa {
+  grid-area: empresa; }
+  .empresa h1 {
+    left: 50px !important; }

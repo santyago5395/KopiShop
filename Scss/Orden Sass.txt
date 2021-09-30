@@ -1,0 +1,71 @@
+
+
+sass/
+|
+|– utilities/
+|   |– _variables.sass    // Variables
+|   |– _functions.sass    // Funciones
+|   |– _mixins.sass       // Mixins
+|
+|– base/
+|   |– _reset.sass        // Reset/normalize
+|   |– _typo.sass         // Tipografías
+|
+|– components
+|   |– _buttons.acss      // Bot
+|   |– _jumbo.sass        // Jumbo
+|
+|– layout/
+|   |– _navigation.sass   // Navegación
+|   |– _grid.sass         // Grid
+|   |– _header.sass       // Header
+|   |– _footer.sass       // Footer
+|   |– _forms.sass        // Formularios
+|
+|– views/
+|   |– _home.sass         // Estilos de la página de inicio
+|   |– _contact.sass      // Estilos de la página de contacto
+|
+|– themes/
+|   |– _theme.sass        // Default theme
+|   |– _admin.sass        // Admin theme
+|
+|– vendors/
+|   |– _bootstrap.sass    // Bootstrap
+|   |– _jquery-ui.sass    // jQuery UI
+|
+|– main.sass              // Archivo principal
+
+
+
+luego importa en el main.sass
+
+@import "Base/normalize";
+@import "Base/typo";
+
+@import "Components/buttons";
+@import "Components/jumbo";
+
+@import "Layout/navigation";
+@import "Layout/grid";
+@import "Layout/header";
+@import "Layout/footer";
+@import "Layout/forms";
+@import "Layout/Rules";
+@import "Layout/aside";
+@import "Layout/main";
+@import "Layout/search";
+
+@import "Themes/theme";
+@import "Themes/admin";
+
+@import "Utilities/variables";
+@import "Utilities/functions";
+@import "Utilities/mixins";
+
+@import "Vendors/bootstrap";
+@import "Vendors/jquery-ui";
+@import "Vendors/Screen";
+
+@import "Views/home";
+@import "Views/contact";

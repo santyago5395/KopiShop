@@ -1,0 +1,177 @@
+.grid-main {
+  grid-area: main;
+  background: linear-gradient(
+    180deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(9, 9, 121, 1) 20%,
+    rgba(8, 42, 143, 1) 34%,
+    rgb(3, 93, 110) 100%
+  );
+  width: 100%;
+  height: auto;
+  text-decoration: none;
+  padding-top: 50px;
+}
+
+.container {
+  margin: 40px 80px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Titulo Titulo Titulo Titulo"
+    "foto foto Description Description"
+    "foto foto Description Description";
+}
+
+.Titulo {
+  grid-area: Titulo;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Merriweater";
+  color: white;
+}
+
+.foto {
+  grid-area: foto;
+  border-radius: 20px;
+}
+
+#img1 {
+  margin: 5px;
+  background-image: url(../img/coffee.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img3 {
+  background-image: url(../img/ropa.jpg);
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.Description {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.6fr 0.4fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "Text Text Text"
+    "Text Text Text"
+    "Link Link Link";
+  grid-area: Description;
+}
+
+.Text {
+  grid-area: Text;
+  color: white;
+  font-size: 20px;
+}
+
+.Link {
+  grid-area: Link;
+  margin: auto;
+  a {
+    border: 3px solid #3a0ca3;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 4px;
+    transition: all 1s;
+  }
+  a:hover {
+    background: #560bad;
+    font-size: 25px;
+    color: white;
+  }
+}
+
+// *viceversa de presentacion
+
+.container2 {
+  margin: 40px 80px;
+  height: 400px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 0.3fr 1.7fr 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "titulo2 titulo2 titulo2 titulo2"
+    "description2 description2 foto2 foto2"
+    "description2 description2 foto2 foto2";
+}
+
+.titulo2 {
+  grid-area: titulo2;
+  text-align: center;
+  font-size: 60px;
+  font-family: "Merriweater";
+  color: white;
+}
+
+.description2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1.7fr 0.3fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "text2 text2 text2"
+    "text2 text2 text2"
+    "link2 link2 link2";
+  grid-area: description2;
+}
+
+.link2 {
+  grid-area: link2;
+  margin: auto;
+  a {
+    border: 3px solid #3a0ca3;
+    padding: 5px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    font-weight: 4px;
+    transition: all 1s;
+  }
+  a:hover {
+    background: #560bad;
+    font-size: 25px;
+    color: white;
+  }
+}
+
+.text2 {
+  grid-area: text2;
+  color: white;
+  font-size: 20px;
+}
+
+.foto2 {
+  grid-area: foto2;
+  border-radius: 20px;
+}
+
+#img2 {
+  margin: 5px;
+  background-image: url(../img/moka.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#img4 {
+  background-image: url(../img/Nosotros.jpg);
+  background-position: 50%;
+  margin: 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+}

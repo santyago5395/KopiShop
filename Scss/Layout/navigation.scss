@@ -1,0 +1,82 @@
+.grid-nav {
+  grid-area: nav;
+  width: 100%;
+  display: inline-block;
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
+  background-color: rgba(255, 255, 255, 0.15);
+  position: absolute;
+  position: fixed;
+  z-index: 8;
+  backdrop-filter: blur(5px);
+}
+
+.menu-container {
+  margin: 5px;
+  padding: 5px;
+  display: flex;
+}
+
+.login {
+  color: white;
+  left: 0;
+  margin: 5px 5px 0 5px;
+  padding: auto;
+  transition: all 0.5s;
+}
+
+.login:hover {
+  position: relative;
+  top: 5px;
+  color: blueviolet;
+}
+
+.canasta {
+  color: white;
+  margin: 5px 5px 0 5px;
+  padding: auto;
+  transition: all 1s;
+}
+.canasta:hover {
+  position: relative;
+  top: 5px;
+  color: blueviolet;
+}
+
+.menu {
+  position: relative;
+  transition: all 0.5s;
+}
+
+.menu:hover {
+  margin-top: 10px;
+}
+
+.menu img {
+  position: relative;
+  width: 25px;
+  transform: rotate(0deg);
+  transition: all 1s;
+}
+
+.menu img:hover {
+  width: 25px;
+  transform: rotate(180deg);
+}
+
+.buscador {
+  margin-top: -10px;
+  position: relative;
+  transition: all 0.5s;
+}
+
+.buscador:hover {
+  margin-top: 4px;
+}
+
+.logotipo img {
+  position: absolute;
+  right: 20px;
+  width: 60px;
+  margin-top: -20px;
+}

@@ -1,0 +1,56 @@
+.body {
+  background-color: #6f4518;
+  margin: 0;
+  font-weight: normal;
+}
+@import "Base/Font.scss";
+
+@import "Components/buttons";
+@import "Components/jumbo";
+
+@import "Layout/grid";
+@import "Layout/navigation";
+@import "Layout/header";
+@import "Layout/aside";
+@import "Layout/main";
+@import "Layout/footer";
+
+@import "Layout/forms";
+// @import "Layout/Rules";
+
+// <div class="sign">
+//                     <header>
+//                         <h1>Reglas</h1>
+//                     </header>
+
+//                     <main>
+//                         <ol>
+//                             <li><b>Pedidos para Manizales a domicilio</b></li>
+//                             <li>Pedidos fuera de Manizales  en servientrega</li>
+//                             <li>Los pedidos se llevaran despues despues de las 4:00 pm </li>
+//                             <li> l</li>
+//                             <li></li>
+//                             <li>No Diving</li>
+//                         </ol>
+//                     </main>
+//                     <footer>
+//                         <h2>No Lifeguard On Duty</h2>
+//                         <h3>Swim at your own risk</h3>
+//                     </footer>
+//                 <div>
+@import "Layout/search";
+
+@import "Themes/theme";
+@import "Themes/admin";
+
+@import "Utilities/variables";
+@import "Utilities/functions";
+@import "Utilities/mixins";
+
+@import "Vendors/bootstrap";
+@import "Vendors/jquery-ui";
+@import "Vendors/Screen";
+
+@import "Views/home";
+
+@import "Views/contact";
