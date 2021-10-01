@@ -1,5 +1,4 @@
 .grid-header {
-  background: blue;
   grid-area: header;
   display: flex;
   width: 100%;

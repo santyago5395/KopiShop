@@ -22,10 +22,12 @@
   div h1 {
     color: white;
     text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em;
   }
 }
 
-.contacto {
+#contacto {
   grid-area: contacto;
   form {
     width: 50%;
@@ -34,12 +36,12 @@
     padding: 20px;
     margin: auto;
     background-color: rgb(31, 34, 48);
-    animation: bounce 1.5s infinite;
+    animation: bounce 3s infinite;
   }
 
   legend {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Merriweather";
     color: white;
   }
@@ -81,10 +83,37 @@
 
 .ubicacion {
   grid-area: ubicacion;
+  div img {
+    width: 60%;
+    display: block;
+    margin: auto;
+  }
+  ul {
+    list-style: none;
+    text-align: center;
+    color: white;
+  }
+  ul li {
+    margin: 5px;
+  }
 }
 
 .navegacion {
   grid-area: navegacion;
+  ul {
+    list-style: none;
+  }
+  ul li {
+    margin: 5px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+  }
+  a:hover {
+    font-size: 1.7em;
+  }
 }
 
 .nosotros {
@@ -97,7 +126,4 @@
 
 .empresa {
   grid-area: empresa;
-  h1 {
-    left: 50px !important;
-  }
 }

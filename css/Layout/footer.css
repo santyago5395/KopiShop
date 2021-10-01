@@ -16,21 +16,23 @@
   grid-template-areas: "contacto contacto contacto contacto" "ubicacion navegacion nosotros noticias" "empresa empresa empresa empresa"; }
   .footer div h1 {
     color: white;
-    text-align: center; }
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em; }
 
-.contacto {
+#contacto {
   grid-area: contacto; }
-  .contacto form {
+  #contacto form {
     width: 50%;
     border-radius: 20px;
     color: white;
     padding: 20px;
     margin: auto;
     background-color: #1f2230;
-    animation: bounce 1.5s infinite; }
-  .contacto legend {
+    animation: bounce 3s infinite; }
+  #contacto legend {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Merriweather";
     color: white; }
 
@@ -64,9 +66,29 @@
 
 .ubicacion {
   grid-area: ubicacion; }
+  .ubicacion div img {
+    width: 60%;
+    display: block;
+    margin: auto; }
+  .ubicacion ul {
+    list-style: none;
+    text-align: center;
+    color: white; }
+  .ubicacion ul li {
+    margin: 5px; }
 
 .navegacion {
   grid-area: navegacion; }
+  .navegacion ul {
+    list-style: none; }
+  .navegacion ul li {
+    margin: 5px; }
+  .navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s; }
+  .navegacion a:hover {
+    font-size: 1.7em; }
 
 .nosotros {
   grid-area: nosotros; }
@@ -76,5 +98,3 @@
 
 .empresa {
   grid-area: empresa; }
-  .empresa h1 {
-    left: 50px !important; }

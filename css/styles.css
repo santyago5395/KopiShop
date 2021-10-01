@@ -84,7 +84,6 @@
   margin-top: -20px; }
 
 .grid-header {
-  background: blue;
   grid-area: header;
   display: flex;
   width: 100%;
@@ -327,21 +326,23 @@
   grid-template-areas: "contacto contacto contacto contacto" "ubicacion navegacion nosotros noticias" "empresa empresa empresa empresa"; }
   .footer div h1 {
     color: white;
-    text-align: center; }
+    text-align: center;
+    margin: 10px 0;
+    font-size: 1.5em; }
 
-.contacto {
+#contacto {
   grid-area: contacto; }
-  .contacto form {
+  #contacto form {
     width: 50%;
     border-radius: 20px;
     color: white;
     padding: 20px;
     margin: auto;
     background-color: #1f2230;
-    animation: bounce 1.5s infinite; }
-  .contacto legend {
+    animation: bounce 3s infinite; }
+  #contacto legend {
     text-align: center;
-    font-size: 50px;
+    font-size: 40px;
     font-family: "Merriweather";
     color: white; }
 
@@ -375,9 +376,29 @@
 
 .ubicacion {
   grid-area: ubicacion; }
+  .ubicacion div img {
+    width: 60%;
+    display: block;
+    margin: auto; }
+  .ubicacion ul {
+    list-style: none;
+    text-align: center;
+    color: white; }
+  .ubicacion ul li {
+    margin: 5px; }
 
 .navegacion {
   grid-area: navegacion; }
+  .navegacion ul {
+    list-style: none; }
+  .navegacion ul li {
+    margin: 5px; }
+  .navegacion ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s; }
+  .navegacion a:hover {
+    font-size: 1.7em; }
 
 .nosotros {
   grid-area: nosotros; }
@@ -387,8 +408,6 @@
 
 .empresa {
   grid-area: empresa; }
-  .empresa h1 {
-    left: 50px !important; }
 
 input {
   outline: none;
@@ -461,87 +480,31 @@ input::placeholder {
 #search input::-webkit-input-placeholder {
   color: transparent; }
 
-@media screen and (max-width: 800px) {
+@media only screen and (max-width: 50rem) {
   .logotipo {
     opacity: 0; }
-  /*presentaciones screen*/
   .grid-header {
     grid-area: header;
     display: flex;
     flex-direction: column;
-    background: #8a84e2;
     width: 100%;
-    height: auto; }
-  .grid-header div {
+    height: 250px; }
+  .img-animation {
     display: flex;
     flex-grow: 1;
     background: cover;
     width: 100%;
-    height: 150px; }
-  .img-almasigo {
-    background: red;
-    width: auto;
-    margin: auto;
-    animation-name: almasigo;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .img-cafe {
-    background: blue;
-    width: auto;
-    margin: auto;
-    animation-name: cafe;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .img-productos {
-    background: black;
-    width: auto;
-    margin: auto;
-    animation-name: productos;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
-  .img-moda {
-    background-image: url(../img/ropa.jpg);
-    width: auto;
-    margin: auto;
-    animation-name: moda;
-    animation-duration: 10s;
-    animation-iteration-count: infinite;
-    animation-direction: alternate; }
+    height: 200px; }
   .img-logo {
     position: absolute;
-    left: 0%;
-    top: 250px;
+    top: 50px;
     z-index: 6; }
   .wave {
     position: absolute;
     visibility: hidden; }
-  @keyframes almasigo {
-    from {
-      object-position: bottom; }
-    to {
-      object-position: top; } }
-  @keyframes cafe {
-    from {
-      object-position: top; }
-    to {
-      object-position: bottom; } }
-  @keyframes productos {
-    from {
-      object-position: bottom; }
-    to {
-      object-position: top; } }
-  @keyframes moda {
-    from {
-      object-position: top; }
-    to {
-      object-position: bottom; } }
   /* servicios*/
   .grid-main {
     grid-area: main;
-    background: linear-gradient(180deg, #020024 0%, #090979 20%, #082a8f 34%, tomato 100%);
     width: 100%;
     height: auto;
     text-decoration: none;
@@ -553,75 +516,16 @@ input::placeholder {
     align-items: center;
     padding: 10px;
     width: 90%;
-    height: 400px;
-    border: solid 2px;
-    border-color: black;
-    border-radius: 20px; }
-  .container:hover {
-    display: flex;
-    flex-grow: 1;
-    justify-content: center;
-    align-items: center;
-    padding: 10px;
-    width: 90%;
     height: 400px; }
-  .titulo {
-    position: absolute;
-    top: -50px;
-    z-index: 2; }
-  .img {
-    margin: auto;
-    opacity: 0;
-    right: 0;
-    width: 50%;
-    height: 100%;
-    z-index: 1;
-    transition: all 1s; }
-  .img:hover {
-    opacity: 0; }
-  .img div {
-    width: 150%;
-    height: 100%; }
-  .img div img {
-    border-radius: 100%;
-    max-height: 100%; }
-  .lector {
-    display: flex;
-    flex-grow: 1;
-    flex-direction: column;
-    position: absolute;
-    margin-top: 0;
-    width: 60%;
-    height: 80%; }
-  .lector div {
-    width: 100%;
-    height: 100%;
-    margin: 0; }
-  .lector div img {
-    width: 100%;
-    height: 50%;
-    bottom: 0;
-    overflow: hidden;
-    object-fit: cover;
-    border-radius: 20px; }
-  .screenlector {
-    position: relative;
-    top: -80px;
-    text-decoration: none;
-    color: white; }
-  .screenoimg {
-    position: absolute;
-    opacity: 0;
-    top: -1500px; }
   /* soscial media screen*/
   .grid-aside {
     grid-area: aside; }
   .socialmedia {
-    background: linear-gradient(0deg, #020024 0%, #090979 20%, #082a8f 34%, tomato 100%);
+    background: #1b1c24;
     display: flex;
     flex-grow: 1;
     width: 100%;
-    height: 100%;
+    height: 10px;
     margin: 0;
     list-style: none;
     position: relative;
@@ -630,21 +534,71 @@ input::placeholder {
     display: flex;
     padding: auto;
     margin: 0px auto;
-    list-style: none; }
+    list-style: none;
+    text-decoration: none; }
+  .socialmedia ul li a {
+    list-style: none;
+    text-decoration: none; }
   .icons {
     display: flex;
     flex-direction: row-reverse;
     transition: all 0.5s;
     justify-items: center;
-    color: #011627;
+    color: #01060a;
     text-decoration-line: none; }
   .icons:hover {
     position: relative;
     bottom: 5px;
     color: #fff; }
   .socialmedia div {
-    content: "";
     display: block;
     position: absolute;
     background: none;
-    margin: 0px auto; } }
+    margin: 0px auto; }
+  .footer {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.5fr 0.3fr 0.3fr 0.3fr 0.3fr 0.3fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas: "contacto" "navegacion " "nosotros " "noticias" "ubicacion " "empresa"; }
+    .footer div {
+      text-align: center; }
+  #contacto {
+    grid-area: contacto;
+    text-align: start; }
+    #contacto form {
+      width: 90%; }
+    #contacto legend {
+      font-size: 30px; }
+  .ubicacion {
+    grid-area: ubicacion; }
+    .ubicacion div img {
+      width: 60%;
+      display: block;
+      margin: auto; }
+    .ubicacion ul {
+      list-style: none;
+      text-align: center;
+      color: white; }
+    .ubicacion ul li {
+      margin: 5px; }
+  .navegacion {
+    grid-area: navegacion; }
+    .navegacion ul {
+      list-style: none; }
+    .navegacion ul li {
+      margin: 5px; }
+    .navegacion ul li a {
+      text-decoration: none;
+      color: white;
+      transition: 1s; }
+    .navegacion a:hover {
+      font-size: 1.7em; }
+  .nosotros {
+    grid-area: nosotros; }
+  .noticias {
+    grid-area: noticias; }
+  .empresa {
+    grid-area: empresa; } }
