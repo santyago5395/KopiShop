@@ -92,9 +92,25 @@
 
 .nosotros {
   grid-area: nosotros; }
+  .nosotros ul {
+    list-style: none; }
+  .nosotros ul li {
+    margin: 5px; }
+  .nosotros ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s; }
+  .nosotros a:hover {
+    font-size: 1.7em; }
 
 .noticias {
   grid-area: noticias; }
+  .noticias div {
+    margin: 10px;
+    height: 350px;
+    overflow: auto;
+    overflow-y: opacity 0;
+    border-radius: 10px; }
 
 .empresa {
   grid-area: empresa; }

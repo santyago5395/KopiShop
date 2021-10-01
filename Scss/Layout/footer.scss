@@ -118,10 +118,31 @@
 
 .nosotros {
   grid-area: nosotros;
+  ul {
+    list-style: none;
+  }
+  ul li {
+    margin: 5px;
+  }
+  ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 1s;
+  }
+  a:hover {
+    font-size: 1.7em;
+  }
 }
 
 .noticias {
   grid-area: noticias;
+  div {
+    margin: 10px;
+    height: 350px;
+    overflow: auto;
+    overflow-y: opacity 0;
+    border-radius: 10px;
+  }
 }
 
 .empresa {
