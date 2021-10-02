@@ -37,6 +37,27 @@
     margin: auto;
     background-color: rgb(31, 34, 48);
     animation: bounce 3s infinite;
+
+    div {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    button {
+      border-radius: 10px;
+      border: none;
+      background: rgb(15, 16, 22);
+      border-bottom: 22px white;
+      color: white;
+      transition: all 1s;
+    }
+    button:hover {
+      background: lightblue;
+      font-size: 20px;
+      font-weight: 2px;
+      color: #000;
+      border-radius: 10px;
+    }
   }
 
   legend {
@@ -65,6 +86,14 @@
 }
 
 #email {
+  background: rgb(15, 16, 22);
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  color: white;
+}
+
+#asunto {
   background: rgb(15, 16, 22);
   border: none;
   border-radius: 10px;

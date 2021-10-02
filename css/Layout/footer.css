@@ -30,6 +30,23 @@
     margin: auto;
     background-color: #1f2230;
     animation: bounce 3s infinite; }
+    #contacto form div {
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    #contacto form button {
+      border-radius: 10px;
+      border: none;
+      background: #0f1016;
+      border-bottom: 22px white;
+      color: white;
+      transition: all 1s; }
+    #contacto form button:hover {
+      background: lightblue;
+      font-size: 20px;
+      font-weight: 2px;
+      color: #000;
+      border-radius: 10px; }
   #contacto legend {
     text-align: center;
     font-size: 40px;
@@ -50,6 +67,13 @@
   color: white; }
 
 #email {
+  background: #0f1016;
+  border: none;
+  border-radius: 10px;
+  margin: auto;
+  color: white; }
+
+#asunto {
   background: #0f1016;
   border: none;
   border-radius: 10px;

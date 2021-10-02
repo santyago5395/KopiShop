@@ -6,8 +6,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
+    <!-- Estilos de la pagina -->
     <link rel="stylesheet" href="css/styles.css" />
 
+    <!--  EstilosBoostraps, icons y fonts -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -30,7 +32,11 @@
       crossorigin="anonymous"
     ></script>
 
+    <!-- Javascript -->
+
+    <!-- Pestaña -->
     <title>Inicio</title>
+    <link rel="shortcut icon" href="img/logo K.png" />
   </head>
 
   <!--Cuerpo-->
@@ -227,12 +233,20 @@
       <footer class="grid-footer">
         <div class="footer">
           <div id="contacto">
-            <legend>Contactanos</legend>
+            <legend>Charlemos</legend>
 
-            <form>
+            <form
+              id="form"
+              action="https://api.web3forms.com/submit"
+              method="POST"
+            > 
+
+              <input type="hidden" name="apikey" value="335d3e10-164b-4802-8678-f5f9dc8696fd">
+
               <label for="name">Nombres:</label><br />
               <input
                 type="name"
+                name="name"
                 id="name"
                 placeholder="Pon tu nombre aqui:"
                 required
@@ -244,8 +258,21 @@
               <label for="email">Email:</label><br />
               <input
                 type="email"
+                name="email"
                 id="email"
                 placeholder="Pon tu correo @ aqui:"
+                required
+              />
+
+              <br />
+              <br />
+
+              <label for="asunto">Asunto:</label><br />
+              <input
+                type="text"
+                name="asunto"
+                id="asunto"
+                placeholder="De que se trata"
                 required
               />
 
@@ -255,10 +282,17 @@
               <label for="comentario">Mensaje:</label><br />
               <textarea
                 id="areatext"
+                name="message"
                 placeholder="Escribenos "
                 required
               ></textarea>
+
+              <div>
+                <button type="submit">Despachar</button>
+              </div>
             </form>
+
+            <p id="my-form-status"></p>
           </div>
 
           <div class="ubicacion">
@@ -318,6 +352,15 @@
           </div>
         </div>
       </footer>
+
+      <!--* para enviar el form al correo gratis OPCIONAL -->
+      <!-- <a href="mailto:santyago5395@gmail.com" id="correoEmpresa"></a>
+      <script src="javascript/form.js"></script> -->
+
+      <!--* para enviar el form al correo con API formspree(https://formspree.io/f/mgerqknp) ó web3forms (Key) OPCIONAL -->
+      <script src="javascript/form2.js"></script>
+
+
     </div>
   </body>
 </html>
